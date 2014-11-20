@@ -1,0 +1,10 @@
+﻿<Window x:Class="MathGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MathGame" Height="350" Width="525" Loaded="Window_Loaded">
+    <Grid>
+        <Label Content="--" Height="73" HorizontalAlignment="Left" Margin="32,48,0,0" Name="labelTask" VerticalAlignment="Top" Width="416" FontSize="48" />
+        <TextBox Height="79" HorizontalAlignment="Left" Margin="33,159,0,0" Name="textBoxInput" VerticalAlignment="Top" Width="416" KeyDown="textBoxInput_KeyDown" FontSize="48" />
+        <Label Height="28" HorizontalAlignment="Left" Margin="12,283,0,0" Name="LabelStatistics" VerticalAlignment="Top" Width="448" ClipToBounds="False" />
+    </Grid>
+</Window>
