@@ -60,17 +60,17 @@ namespace MathGame {
                     x = m_RandomNumberGenerator.Next(1, MAX_NUMBER_VAL);
                     y = m_RandomNumberGenerator.Next(1, MAX_NUMBER_VAL);
                     m_TaskResult = x + y;
-                    this.labelTask.Content = String.Format("{0} + {1} = ?", x, y);
+                    this.labelTask.Content = String.Format("{0} + {1} = ", x, y);
                     break;
                 case (int)Operators.Subtract:
                     x = m_RandomNumberGenerator.Next(1, MAX_NUMBER_VAL);
                     y = m_RandomNumberGenerator.Next(1, MAX_NUMBER_VAL);
                     if (y >= x) {
-                        this.labelTask.Content = String.Format("{0} - {1} = ?", y, x);
+                        this.labelTask.Content = String.Format("{0} - {1} = ", y, x);
                         m_TaskResult = y - x;
                     }
                     else {
-                        this.labelTask.Content = String.Format("{0} - {1} = ?", x, y);
+                        this.labelTask.Content = String.Format("{0} - {1} = ", x, y);
                         m_TaskResult = x - y;
                     }
                     break;
@@ -78,13 +78,13 @@ namespace MathGame {
                     x = m_RandomNumberGenerator.Next(1, MAX_NUMBER_VAL);
                     y = m_RandomNumberGenerator.Next(1, MAX_NUMBER_VAL);
                     m_TaskResult = x * y;
-                    this.labelTask.Content = String.Format("{0} * {1} = ?", x, y);
+                    this.labelTask.Content = String.Format("{0} * {1} = ", x, y);
                     break;
                 case (int)Operators.Divide:
                     x = m_RandomNumberGenerator.Next(1, MAX_NUMBER_VAL);
                     y = m_RandomNumberGenerator.Next(1, MAX_NUMBER_VAL);
                     m_TaskResult = x * y;
-                    this.labelTask.Content = String.Format("{0} / {1} = ?", m_TaskResult, x);
+                    this.labelTask.Content = String.Format("{0} / {1} = ", m_TaskResult, x);
                     m_TaskResult = y;
                     break;
                 default:
